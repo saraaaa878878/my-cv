@@ -163,9 +163,13 @@ main {
 .section-title {
   font-family: var(--font-display);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4rem;
+  text-decoration-color: var(--accent-teal);
 }
 
 /* ===== ABOUT ===== */
@@ -199,6 +203,12 @@ main {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
+}
+
+.project-title::before {
+  content: "▶ ";
+  color: var(--accent-teal);
+  margin-right: 0.5rem;
 }
 
 .project-description {
@@ -237,6 +247,12 @@ main {
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
+}
+
+.edu-degree::before {
+  content: "▶ ";
+  color: var(--accent-teal);
+  margin-right: 0.5rem;
 }
 
 .edu-date {
@@ -302,17 +318,14 @@ main {
 }
 
 .skill-list {
-  list-style: none;
+  list-style: disc;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.6rem;
+  padding-left: 1.5rem;
 }
 
 .skill-list li {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius);
   font-size: 0.9rem;
   color: var(--text-primary);
 }
