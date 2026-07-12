@@ -3,60 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sara Petro | CV</title>
+  <title>Sara Petro | Computer Engineering Student</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <h1>Sara Petro</h1>
-    <p class="tagline">Studente e Inxhinierisë Informatike | Universiteti Politeknik i Tiranës</p>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-content">
+      <h1 class="name">SARA PETRO</h1>
+      <p class="title">Computer Engineering Student</p>
+
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
   </header>
+
+  <!-- Fixed theme toggle - stays in place on scroll -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
   <main>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Jam Sara Petro, aktualisht në vitin e dytë të Inxhinierisë Informatike në Universitetin Politeknik të Tiranës. Më pëlqen të kuptoj si funksionojnë gjërat, prandaj kaloj kohë duke eksploruar programim dhe projekte të vogla praktike. Kur nuk jam para kompjuterit, më pëlqen të lexoj ose të dal shëtitje.</p>
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        Computer Engineering student with a genuine curiosity for how things work, from low-level logic in C to
+        modern web development. I enjoy turning ideas into working projects and am always looking for the next
+        challenge to grow as an engineer. Alongside my studies, I like exploring new tools and technologies on my
+        own, which keeps me constantly learning beyond the curriculum.
+      </p>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>Sistem menaxhimi notash dhe lëndësh — projekt në gjuhën C</li>
-        <li>E-Support — sistem databaze për menaxhimin e shërbimeve në një servis</li>
-      </ul>
+    <!-- ===== EXPERIENCE / PROJECTS ===== -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="project-item">
+        <div class="project-header">
+          <h3 class="project-title">Student Grade & Course Management System</h3>
+        </div>
+        <p class="project-description">
+          A console-based application developed in C, designed to manage student grades and course records.
+          Implemented using Dev C++ and built entirely with elementary C functions, focusing on structured
+          logic, data handling, and file management.
+        </p>
+        <p class="project-tech"><strong>Technologies:</strong> C, Dev C++</p>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <h3 class="project-title">eSupport — Service Management Database System</h3>
+        </div>
+        <p class="project-description">
+          A database-driven system designed to manage and streamline operations for a service-based business.
+          The project focused on database design and query management using Oracle, with the application layer
+          developed in Visual Studio.
+        </p>
+        <p class="project-tech"><strong>Technologies:</strong> Oracle, Visual Studio</p>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <h3 class="project-title">Tirana Scout</h3>
+        </div>
+        <p class="project-description">
+          A Python-based project exploring apartment listing and price data in Tirana, using AI and machine
+          learning libraries for data analysis and prediction. Built as groundwork for a larger upcoming project
+          focused on housing market analysis.
+        </p>
+        <p class="project-tech"><strong>Technologies:</strong> Python, Machine Learning, AI Libraries</p>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <h3 class="project-title">Personal CV Website</h3>
+        </div>
+        <p class="project-description">
+          This very website — a personal portfolio and CV built from scratch and hosted on GitHub, featuring a
+          dark mode toggle and scroll-based animations, designed to be clean, responsive, and easy to navigate.
+        </p>
+        <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript, GitHub</p>
+      </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li>Universiteti Politeknik i Tiranës</li>
-        <li>Bachelor në Inxhinieri Informatike (2024–2027)</li>
-      </ul>
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="edu-item">
+        <div class="edu-header">
+          <h3 class="edu-degree">Computer Engineering, Bachelor's Degree</h3>
+          <span class="edu-date">2024 – Present</span>
+        </div>
+        <p class="edu-institution">Polytechnic University of Tirana</p>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-header">
+          <h3 class="edu-degree">Build with AI — Summer School</h3>
+          <span class="edu-date">Currently Attending</span>
+        </div>
+        <p class="edu-institution">Holberton School</p>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Anglisht — B2</li>
-        <li>C</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>Baza të dhënash (SQL)</li>
-        <li>Git & GitHub</li>
-      </ul>
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <ul class="skill-list">
+            <li>C</li>
+            <li>Java</li>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Tools &amp; Technologies</h3>
+          <ul class="skill-list">
+            <li>Visual Studio Code</li>
+            <li>Git &amp; GitHub</li>
+            <li>Oracle</li>
+            <li>Microsoft Office</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Concepts</h3>
+          <ul class="skill-list">
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>Databases</li>
+            <li>Computer Architecture</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Soft Skills</h3>
+          <ul class="skill-list">
+            <li>Well-Organized</li>
+            <li>Fast Learner</li>
+            <li>Team Collaboration</li>
+            <li>Deadline-Oriented</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Tel: 068XXXXXXX</li>
-        <li>Email: sarapetro5@gmai.com</li>
-      </ul>
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-info">
+        <span class="contact-item"><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:sarapetro@gmail.com">sarapetro@gmail.com</a></span>
+        <span class="contact-item"><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/saraaaa878878" target="_blank">GitHub</a></span>
+        <span class="contact-item"><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">Sara Petro</a></span>
+      </div>
     </section>
 
   </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Sara Petro, Tirana, Albania. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
